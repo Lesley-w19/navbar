@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --orange-color: rgba(243, 75, 14, 0.733);
+    --white-color:rgba(245, 245, 245, 0.835);
+    --grey-color:rgba(168, 165, 165, 0.267);
+}
+.nav-bar{
+    margin: .05rem .2rem;
+    padding: .4rem .5rem;
+    background-color: var(--white-color);
+    border-radius: .2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    margin: auto 1rem;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    color: rgba(71, 61, 139, 0.828);
+    /* text-shadow: .1rem .05rem .1rem rgba(255, 68, 0, 0.698); */
+    /* border-bottom: .2rem solid rgba(255, 68, 0, 0.698);
+    border-right: .1rem solid rgba(255, 68, 0, 0.698);
+    border-bottom-right-radius: 1rem; */
+    text-transform: uppercase;
+}
+.btn{
+    border: none;
+    outline: none;
+    margin: auto 4rem auto 0rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn i{
+    font-size: 1.8rem;
+    color: #222222;
+    transition: .3s ease-in-out;
+
+}
+.btn i:hover{
+    font-size: 2rem;
+    color: orangered;
+    transform: rotate(-90deg);
+
+}
+.theLinks{
+    width: 99.5%;
+    height: 50px;
+    margin: auto .1rem;
+    background-color: rgba(100, 148, 237, 0.26);
+    box-shadow: .5rem .1rem .2rem var(--grey-color);
+    transition: .5s ease-in-out;
+    position: fixed;
+}
+.showLinks{
+     height: 0; 
+     overflow: hidden; 
+}
+.showLinks .links li a{
+    color: var(--white-color);
+}
+.showLinks .active{
+    background-color: var(--white-color);
+    color: var(--white-color);
+    font-size: 1.13rem;
+    /* transition: 3s ease-in-out; */
+}
+.links{
+    position: absolute;
+    margin: auto 1rem;
+    /* margin-top: .5rem; */
+    padding: 1rem .1rem;
+    list-style: none;
+    display: flex;
+    justify-items: space-between;
+    transition: all .6s ease-in-out;
+}
+
+.links li a{
+    margin: auto 1rem;
+    padding: .4rem 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    border-radius: .2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: blue;
+    /* color: var(--white-color); */
+    transition: all .8s ease-in-out;
+}
+.links li .fa{
+    margin-right: .5rem;
+}
+.links #right{
+    margin: .1rem .05rem;
+    font-size:1.2rem;
+}
+
+.links li a:hover, .links li .active{
+    background-color: rgba(243, 75, 14, 0.691);
+    color: var(--white-color);
+    font-size: 1.13rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1180px){
+   
+  
+}

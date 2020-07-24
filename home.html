@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        body{
+       background: #232323;
+       }
+      body a{
+            font-size: 3.5rem;
+            color: red;
+            text-decoration: none;
+            position: absolute;
+            top: 8%;
+            right: 8%;
+        }
+.home{
+    width: 100%;
+    background: #232323a4;
+    height: 100%;
+}
+.home h1{
+    margin-top: 10rem;
+    text-align: center;
+    text-decoration: line-through;
+    color: white;
+    font-size: 5rem;
+ /* background-color: rosybrown; */
+ background-color: darkslateblue;
+}
+    </style>
+</head>
+<body>
+    <a href="file:///C:/Users/Lesley/Desktop/web/Projects_JS/15%20Vanilla%20JS%20Projects/NavBar/2/home.html" onclick="handleClick(event)">*</a>
+    <section class="home">
+        <h1>HOMEPAGE</h1>
+    </section>
+
+
+
+    <script>
+        function handleClick(event){
+            // Don't follw the link
+            event.preventDefault();
+            // Go back to the last visited page
+            window.history.back();
+            // Bail out of the function
+            return false;
+        }
+    </script>
+</body>
+</html>
